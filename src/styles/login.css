@@ -1,0 +1,133 @@
+.login-section {
+  min-height: 30rem;
+  width: 100%;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+
+.login-section .container {
+  width: 50%;
+  background-color: whitesmoke;
+  border-radius: 4px;
+  height: fit-content;
+  margin-top: 4rem;
+  padding: 1rem 2rem;
+}
+.form-1 {
+  margin: auto;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+.login-section h2 {
+  text-align: center;
+}
+
+.login-section .line {
+  margin: auto;
+  margin-top: 6px;
+}
+.login-section h3 {
+  width: 40px;
+  height: 40px;
+  background-color: darkred;
+  border-radius: 4px;
+  color: white;
+  margin-left: auto;
+  cursor: pointer;
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-1 > div {
+  width: 100%;
+  font-size: 14px;
+  color: rgb(48, 48, 48);
+}
+
+.form-1  label {
+  padding-bottom: 9px;
+  font-size: 12px;
+  color: slategray;
+  font-weight: bolder;
+}
+.form-1 input:focus {
+  background-color: white;
+}
+.form-1 input {
+  outline:  none;
+  padding: 7px;
+  width: 100%;
+  background-color: white;
+  border: none;
+  margin-top: 8px;
+  border-radius: 4px;
+}
+.ama {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  border-radius: 4px;
+  margin-top: 8px;
+}
+.ama input {
+  width: 80%;
+  background-color: transparent;
+  margin-top: 0;
+  padding: 0;
+  border-radius: none;
+}
+
+.ama svg {
+  color: rgb(241, 142, 11);
+  font-size: 14px;
+}
+
+.form-1 button {
+  width: 50%;
+  margin: auto;
+  background-color: rgb(3, 3, 65);
+  color: white;
+  font-weight: bolder;
+  border-radius: 4px;
+}
+
+.form-1 button:hover {
+  background-color: darkblue;
+}
+
+.new-customer {
+  width: 80%;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  text-align: center;
+}
+
+.new-customer p {
+  color: rgb(241, 142, 11);
+  transition: all 400ms ease-in-out;
+  font-weight: bolder;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.new-customer p:hover {
+  text-decoration: underline;
+}
+
+.opt {
+  margin-top: 2rem;
+}

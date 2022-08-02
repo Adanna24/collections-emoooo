@@ -1,0 +1,296 @@
+.nav {
+  width: 100%;
+  height: 4.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: rgb(1, 1, 36);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.1);
+}
+.nav .container {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: auto;
+  height: fit-content;
+}
+
+.logo{
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo label {
+  font-size: 24px;
+  font-family: fantasy;
+}
+
+.nav .btns, .btns-2 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  margin-left: auto;
+  padding-right: 2rem;
+}
+
+a {
+  color: whitesmoke;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 4px;
+  font-size: 14px;
+  transition: all 300ms ease-in-out;
+}
+a:hover{
+  color: rgb(241, 142, 11);
+}
+li {
+  list-style: none;
+}
+
+.nav h4 {
+  color: white;
+  font-family: 'Lobster';
+  text-transform: capitalize;
+}
+
+nav {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  width: 60%;
+}
+
+.nav .active {
+  color: rgb(241, 142, 11);
+  font-weight: bolder;
+  text-decoration: underline;
+  padding: 4px;
+}
+
+.nav a:hover {
+  color: rgb(241, 142, 11);
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+nav button {
+  background-color: rgb(241, 142, 11);
+  border-radius: 4px;
+  margin-left: 1rem;
+  padding: 4px;
+  color: white;
+  font-weight: bold;
+}
+
+.nav button:hover{
+  background-color: rgb(82, 38, 3);
+}
+
+.btns button a:hover {
+  color: rgb(241, 142, 11);
+  text-decoration: none;
+  padding: none;
+}
+
+.nav input {
+  outline: none;
+  background-color: gainsboro;
+  border-radius: 4px;
+  padding: 4px;
+  border: none;
+}
+
+.search {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.cart-hold1 {
+  position: relative;
+  cursor: pointer;
+}
+
+.cart-hold1 svg {
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+}
+
+.cart-hold1 .circle {
+  width: 15px;
+  font-size: 10px;
+  height: 15px;
+  background-color: red;
+  border-radius: 8px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btns:hover, .cart-hold1:hover , .circle:hover {
+     color: white;
+}
+
+.mobile-drop {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  display: none;
+  justify-content: space-between;
+  margin-left: auto;
+}
+.mobile-drop button {
+  background-color: rgb(241, 142, 11);
+  margin-left: 5rem;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+}
+.mob-drop-one{
+  width: fit-content;
+  display: inline-block;
+}
+
+.mob-drop-two {
+  width: fit-content;
+  display: inline-block;
+}
+
+.menuc {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  height: fit-content;
+}
+
+
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  min-width: 130px;
+  margin-top: 2px;
+  border-radius: 4px;
+  text-align: center;
+  transition: all 400ms ease-in-out;
+}
+
+
+/* Links inside the dropdown */
+
+
+.dropdown svg {
+  color: white;
+  font-size: 18px;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: all 400ms ease-in-out;
+}
+
+.dropdown svg:hover{
+  transform: rotate(180deg);
+}
+
+.dropdown:hover  .dropdown-content {
+   display: block;
+}
+
+.dropdown-content h5 {
+  padding: 8px;
+  transition: all 400ms ease-in-out;
+  cursor: pointer;
+}
+
+.dropdown-content h5:hover {
+  color: rgb(241, 142, 11);
+}
+
+.logout {
+  color: red;
+  white-space: nowrap;
+}
+
+.dropdown-content a {
+  color: black;
+}
+
+.mob-drop-one .menuc .dropdown .dropdown-content {
+  min-width: 80px;
+  font-size: 14px;
+  color: rgb(241, 142, 11);
+  font-weight: bold;
+  padding: 6px;
+}
+
+.mob-drop-two .menuc .dropdown .dropdown-content {
+  min-width: 50px;
+  font-size: 14px;
+  color: rgb(241, 142, 11);
+  padding: 6px;
+}
+
+.mobile-drop p {
+  padding: 0rem;
+  border: none;
+  color: black;
+  font-size: 12px;
+}
+
+.mobile-drop a {
+  background-color: transparent;
+  text-decoration: none;
+  padding: 6px;
+  font-size: 12px;
+  color: rgb(241, 142, 11);
+  margin-bottom: 2rem;
+}
+
+.mobile-drop a:hover {
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.mobile-drop .menuc .dropdown .dropdown-content p {
+  margin-bottom: 1rem;
+  padding-top: 6px;
+  padding-right: 5px;
+  cursor: pointer;
+  transition: all 400ms ease-in-out;
+}
+.mobile-drop .menuc .dropdown .dropdown-content p:hover{
+  color: rgb(241, 142, 11);
+  font-weight: bolder;
+} 
+.mobile-drop .menuc h6 {
+  color: white;
+  font-family: 'Lobster';
+  text-transform: capitalize;
+}
+
+.mobile-drop .mob-drop-two h6 {
+  margin-left: 1rem;
+}

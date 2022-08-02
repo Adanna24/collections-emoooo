@@ -1,0 +1,59 @@
+.thanks {
+  min-height: 30rem;
+  width: 100%;
+  padding-top: 5.2rem;
+}
+
+.thnks-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.thnks-img {
+  width: 60%;
+  margin: auto;
+  height: 300px;
+  border-radius: 8px;
+}
+
+.thnks-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+.thnks-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-weight: bold;
+  text-align: center;
+  padding: 1rem;
+}
+
+.thnks-info p {
+  line-height: 1.3rem;
+}
+.thnks-card button {
+  width: 40%;
+  margin: auto;
+  background-color: rgb(241, 142, 11);
+  color: white;
+  border-radius: 8px;
+}
+
+.thnks-card button:hover {
+  background-color: rgb(241, 142, 11);
+} 
+
+@media only screen and (max-width: 900px) {
+  .thnks-card button {
+    width: 90%;
+    margin-bottom: 1rem;
+  }
+}

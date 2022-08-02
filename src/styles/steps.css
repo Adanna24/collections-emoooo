@@ -1,0 +1,20 @@
+.steps {
+  width: 90%;
+  gap: 0.1px;
+  display: flex;
+  margin-bottom: 2rem;
+}
+.steps > div {
+  border-top: 0.3rem slategray solid;
+  color: slategray;
+  flex: 1;
+  padding: 0.5rem;
+  font-size: 14px;
+  text-align: center;
+}
+
+.steps > div.active {
+  border-top: 0.3rem solid rgb(241, 142, 11);
+  color: rgb(241, 142, 11);
+  font-weight: bold;
+}

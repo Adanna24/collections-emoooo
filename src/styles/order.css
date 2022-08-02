@@ -1,0 +1,135 @@
+.order-summary{
+  min-height: 30rem;
+  width: 100%;
+  background-color: rgb(250, 210, 159);
+  padding-top: 6rem;
+  padding-bottom: 2rem;
+}
+
+.order-object {
+  width: 80%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.order-object-section{
+  display:flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  width: 60%;
+}
+
+.order-object-info {
+  display: flex;
+  flex-direction: column;
+}
+.order-object-info strong {
+  color: rgb(241, 142, 11);
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+  gap: 15px;
+}
+.order-object-info p {
+  color: slategray;
+}
+.order-object-info h3 {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+.order-object-section .card-md img {
+  border-radius: 8px;
+}
+
+.order-object-section .card-collection-1 {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 80%;
+  padding: 0rem;
+  margin-top: 1rem;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.order-object .calculate {
+  width: 40%;
+}
+
+.order-object .order-object-section .del {
+  font-size: 12px;
+  color: darkred;
+  margin: 0rem;
+  padding: 0rem;
+  cursor: pointer;
+}
+
+.order-object .ih {
+  display: flex;
+  justify-content: space-between;
+}
+
+.order-object .ih a {
+  width: 50%;
+}
+
+.order-object .ih a button {
+  width: 80%;
+}
+.order-object .check-out {
+  width: 50%;
+}
+.x {
+  margin-left: 1rem;
+}
+
+.ghh h4 {
+  white-space: nowrap;
+  margin-right: 1rem;
+}
+
+.order-object-info h4 {
+  margin-bottom: 2rem;
+}
+@media only screen and (max-width: 900px) {
+  .order-object {
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 30px;
+  }
+
+  .order-object-section {
+    width: 100%;
+  }
+
+  .order-object .calculate {
+    width: 100%;
+  }
+  .order-object-section .card-collection-1 {
+    width: 80%;
+    margin: auto;
+    margin-top: 2rem;
+  }
+  .order-object-section .card-collection-1 .card-md {
+    margin: auto;
+  }
+
+  .cart-sect .container {
+    width: 90%;
+    margin: auto;
+  }
+
+  .empty-cart {
+    width: 100%;
+    padding-top: 2rem;
+  }
+
+  .cart-sect h2 {
+    padding-top: 1rem;
+  }
+
+}

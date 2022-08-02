@@ -1,0 +1,407 @@
+.services {
+  width: 100%;
+  min-height: 30rem;
+  background-color: antiquewhite;
+  padding-top: 4.5rem;
+}
+.contains {
+  width: 90%;
+  padding: 0rem 1rem;
+  margin: auto;
+  padding-bottom: 1rem;
+}
+.slide {
+  max-width: 100%;
+  height: 30rem;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.service-article {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 400ms ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.service-card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: all 400ms ease-in-out;
+}
+
+.service-card img {
+  width: 100%;
+  height: 30rem;
+  object-fit: cover;
+  object-position: center bottom;
+}
+
+.service-card-info {
+  position: absolute;
+  text-align: center;
+  top: 0rem;
+  left: 0;
+  width: 100%;
+  margin: auto;
+  color: white;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  transition: all 400ms ease-in-out;
+}
+.service-card-info h2 {
+  padding: 0rem;
+  color:  rgb(241, 142, 11);
+  font-family: 'Lobster';
+  padding-top: 4rem;
+  font-weight: bolder;
+  font-size: 30px;
+}
+.service-card-info p {
+  width: 50%;
+  margin: auto;
+  padding-top: 1.4rem;
+  line-height: 1.6rem;
+}
+
+.chevron {
+  width: 50%;
+  padding-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.chevron > div {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+  margin: auto;
+  cursor: pointer;
+  transition: all 400ms ease-in-out;
+}
+.customer {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+.customer .cus-slide {
+  width: 40%;
+  height: 20rem;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  background-color: ghostwhite;
+  margin: auto;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-radius: 4px;
+  border-bottom-right-radius: 70px;
+  border-top-left-radius: 70px;
+}
+
+.cus-slide article {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 400ms ease-in-out;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  background-color: whitesmoke;
+  margin: auto;
+  text-align: center;
+}
+
+.cus-slide article img {
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.3);
+  margin: auto;
+  border: 2px solid rgb(241, 142, 11);
+  object-fit: cover;
+  margin-top: 1rem;
+}
+.cus-slide article div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-align: center;
+  padding: 1rem;
+}
+
+.cus-slide article div h4 {
+  color: rgb(241, 142, 11);
+}
+
+.cus-slide article div small {
+  font-size: 12px;
+  text-align: center;
+  color: slategray;
+  width: fit-content;
+  margin: auto;
+ padding-bottom: 1rem;
+}
+
+.cus-slide article div p {
+  font-size: 12px;
+  line-height: 1.3rem;
+  color: slateblue;
+  font-weight: bold;
+}
+
+.chevron > div:hover {
+  background-color: rgb(241, 142, 11);
+  border: 2px solid rgb(241, 142, 11);
+}
+
+.activeslide {
+  opacity: 1;
+  transform: translateX(0);
+  visibility: visible;
+}
+.lastslide {
+  transform: translateX(-100%);
+}
+
+.nextslide {
+  transform: translateX(100%);
+}
+.cus-slide article.activeslide {
+  opacity: 1;
+  transform: translateX(0);
+  visibility: visible;
+}
+
+.cus-slide article.lastslide {
+  transform: translateX(-100%);
+}
+
+.cus-slide article.nextslide{
+  transform: translateX(100%);
+}
+
+.serve {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.serve .line {
+  margin-bottom: 2rem;
+}
+.serve article {
+  width: 200px;
+  height: 180px;
+  background-color: whitesmoke;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 400ms ease-in-out;
+}
+.serve article img {
+  width: 100%;
+  border: 2px solid rgb(241, 142, 11);
+  height: 90px;
+  border-radius: 6px;
+}
+
+.serve article div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-top: 5px;
+}
+
+.seve-collect {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.serve article h4 {
+  padding-left: 3px;
+}
+.serve article p {
+  padding: 0;
+  width: 100%;
+}
+.serve article small {
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.serve article:hover {
+  background-color: rgb(241, 142, 11);
+  color: white;
+}
+
+.miidd {
+  width: 100%;
+  background-color: rgb(252, 182, 92);
+  margin-bottom: 1rem;
+ 
+}
+
+.miidd .container {
+   display: flex;
+   align-items: center;
+   font-family: 'Lobster';
+   height: 8rem;
+   justify-content: space-between;
+   color: white;
+   text-transform: capitalize;
+}
+
+.miidd h3 {
+  width: auto;
+  color: white;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 3;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.about .about-img {
+  width: 40%;
+  height: fit-content;
+  position: relative;
+  z-index: 3;
+}
+.about .about-img img {
+  width: 90%;
+  margin: auto;
+  height: 20rem;
+  object-fit: cover;
+}
+
+.about .about-info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: justify;
+}
+
+.about-info p {
+  color: rgb(241, 142, 11);
+  font-weight: bolder;
+  line-height: 1.6rem;
+}
+.about-info small {
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  color: black;
+  line-height: 1.3rem;
+  font-size: 12px;
+}
+
+.tyre {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
+  color: gold;
+}
+
+.tyre div {
+  width: fit-content;
+  background-color: purple;
+}
+.fr-star {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: fit-content;
+  margin: auto;
+  gap: 5px;
+}
+.customer .cus-slide article div h5 {
+  width: fit-content;
+  color: gold;
+}
+
+.customer .chevron {
+  width: 100%;
+  position: absolute;
+  top: 40%;
+}
+
+.customer .chevron div {
+  background-color: ghostwhite;
+}
+@media only screen and (max-width: 900px) {
+  .seve-collect {
+    width: 60%;
+    margin: auto;
+    gap: 15px;
+  }
+
+  .serve article {
+    margin: auto;
+  }
+
+  .service-card-info p {
+    width: 95%;
+    margin: auto;
+    font-size: 14px;
+  }
+  .miidd .container {
+    flex-direction: column;
+    gap: 15px;
+    height: fit-content;
+  }
+  .about {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .about .about-img {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .about .about-info {
+    width: 100%;
+  }
+
+  .customer .cus-slide {
+    width: 100%;
+    height: 25rem;
+  }
+
+  .customer .chevron {
+    top: 0;
+    width: 100%;
+  }
+}

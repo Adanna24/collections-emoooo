@@ -1,0 +1,164 @@
+.contact-us {
+  width: 100%;
+  min-height: 30rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5rem;
+}
+
+.contact-us .container {
+  background-color: whitesmoke;
+  width: 70%;
+  height: fit-content;
+  border-radius: 8px;
+  box-shadow: 10px 10px 24px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.contact-us .container main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact-us .container main .form-1 {
+  width: 55%;
+}
+
+.contact-us .container main aside {
+  width: 40%;
+  min-height: 20rem;
+}
+.contact-us p {
+  text-align: center;
+  margin-top: 1rem;
+}
+.text-area {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-area textarea {
+  width: 100%;
+  height: 10rem;
+  resize: none;
+  border: none;
+  padding: 6px;
+  border-radius: 6px;
+  outline: none;
+}
+.contact-us main aside .asidee-img {
+  width: 80%;
+  margin: auto;
+  height: fit-content;
+}
+
+.contact-us main aside .asidee-img img {
+  width: 100%;
+  height: 9rem;
+  object-fit: cover;
+  border-radius: 4px;
+  border-bottom-right-radius: 40px;
+  border-top-left-radius: 40px;
+}
+aside .asidde-svg {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.asidde-svg > div {
+  display: flex;
+  width: 50%;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+.asidde-svg p {
+  color: rgb(1, 1, 36);
+  font-weight: bolder;
+  font-size: 18px;
+}
+.aside-svg-svg {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(241, 142, 11);
+  background-color: rgb(247, 231, 210);
+  cursor: pointer;
+}
+
+.aside-svg-svg svg {
+  cursor: pointer;
+  color: rgb(241, 142, 11);
+  font-weight: bolder;
+}
+
+.contact-us main .aside-svg-svg-svg {
+  display: flex;
+  width: 70%;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 1.4rem;
+}
+
+.contact-us main .aside-svg-svg-svg p {
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  color: rgb(1, 1, 36);
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 300ms ease-in-out;
+}
+
+.contact-us main .aside-svg-svg-svg p:hover {
+  color: rgb(241, 142, 11);
+}
+
+@media only screen and (max-width: 900px) {
+  .contact-us .container {
+    width: 90%;
+    margin-top: 1rem;
+  }
+  .contact-us main {
+    flex-direction: column-reverse;
+    width: 100%;
+    gap: 30px;
+  }
+
+  .contact-us .container main .form-1 {
+    width: 100%;
+  }
+
+  .contact-us main .form-1 div {
+    width: 100%;
+  }
+
+  .contact-us .container main aside {
+    width: 100%;
+  }
+
+  .asidde-svg > div {
+    width: 70%;
+  }
+
+  .contact-us main aside .asidee-img {
+    margin-top: 2rem;
+  }
+
+  .contact-us main .aside-svg-svg-svg {
+    width: 90%;
+  }
+}

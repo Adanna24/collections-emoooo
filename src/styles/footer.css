@@ -1,0 +1,108 @@
+.footer {
+  background-color: rgb(1, 1, 36);
+  width: 100%;
+  min-height: auto !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding-top: 2rem;
+}
+
+.footer .container{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-top: 2rem;
+}
+
+.footer .logo {
+  font-size: 24px;
+  text-transform: uppercase;
+  width: 25%;
+  color: rgb(241, 142, 11);
+  margin: auto;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  color: white;
+  width: 20%;
+}
+
+.footer-nav button {
+  width: 100px;
+  background-color: rgb(241, 142, 11);
+  color: white;
+  font-weight: bolder;
+  border-radius: 4px;
+}
+
+.texts {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  gap: 15px;
+}
+.texts p {
+  width: 80%;
+  text-transform: capitalize;
+  font-size: 12px;
+  line-height: 1.2rem;
+}
+.footer h4 {
+  font-size: 16px;
+  color: white;
+  font-weight: bolder;
+}
+.socials {
+  display: flex;
+  margin: 1rem 0rem;
+  align-items: center;
+  gap: 10px;
+}
+
+.com {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  flex-direction: column;
+}
+
+.socials > div {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 15px;
+  transition: all 400ms ease-in-out;
+  cursor: pointer;
+  font-size: 18px;
+}
+.fa {
+  color: blue;
+}
+.in {
+  color: hotpink;
+}
+.tik {
+  color: darkblue;
+}
+.twi {
+  color: lightblue;
+}
+
+.re {
+  gap: 8px;
+}
+
+.socials > div:hover{
+  background-color: rgb(241, 142, 11);
+  color: white;
+}
